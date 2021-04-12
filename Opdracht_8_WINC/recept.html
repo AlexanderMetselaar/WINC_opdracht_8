@@ -1,0 +1,80 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Je favoriete recept</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <a href="index.html">Terug naar homepage</a>
+</head>
+
+<body>
+    <form name="contact" method="POST" data-netlify="true">
+
+        <fieldset>
+            <legend>
+                Je persoonlijke gegevens:
+            </legend>
+
+            <input type="text" name="name" id="" placeholder="Naam"><br>
+            <input type="email" name="email" id="" placeholder="Emailadres"><br>
+            <input type="tel" name="phone" id="" placeholder="Telefoonnummer"><br>
+            <label>Leeftijd: </label><br /><input type="number" max="99" min="1" name="age" step="1" value="18"><br>
+            <label>Geboortedatum:</label><br /><input type="date" name="birth" id="geboortedatum"><br>
+
+            <label>
+                Geslacht:
+                <input type="radio" id="male" name="Geslacht" value="male">
+                <label for="male">Man</label>
+                <input type="radio" id="female" name="Geslacht" value="male">
+                <label for="male">Vrouw</label><br />
+            </label>
+        </fieldset>
+        <br />
+
+        <fieldset>
+            <legend>
+                Je favoriete keuken:
+            </legend>
+
+            <input type="checkbox" id="cuisine1" name="cuisine1">
+            <label for="cuisine1">Frans</label>
+            <br>
+            <input type="checkbox" id="cuisine2" name="cuisine2">
+            <label for="cuisine2">Italiaans</label>
+            <br>
+            <input type="checkbox" id="cuisine3" name="cuisine3">
+            <label for="cuisine3">Spaans</label>
+            <br>
+            <input type="checkbox" id="cuisine4" name="cuisine4">
+            <label for="cuisine4">Arabisch</label>
+
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Je favoriete kleur short:</legend>
+            <input type="color" id="favcolor" name="favcolor" value="1762A7">
+        </fieldset>
+        <br />
+
+        <fieldset>
+            <legend>Biografie:</legend>
+            <textarea rows="4" cols="40" id="comments"></textarea>
+        </fieldset>
+        <br />
+
+        <fieldset>
+            <legend>Recepten</legend>
+            <label>
+                Upload hier je recept:
+            </label><input type="file" id="upload" name="upload"><br>
+            <label>
+                Plaats hier de link naar je recepten website:
+            </label><input type="url" name="receptenwebsite">
+        </fieldset>
+        <br />
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+
+</html>
